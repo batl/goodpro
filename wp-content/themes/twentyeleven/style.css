@@ -71,9 +71,28 @@ footer, header, hgroup, menu, nav, section {
 body {
 	padding: 0 2em;
 }
-#page {
-	margin: 2em auto;
-	max-width: 1000px;
+#page {	
+	color:#333;
+	font-size:.9em;	
+	overflow:hidden;	
+	margin:0px auto;
+	max-width:1000px;
+	height:auto;
+	padding-bottom:20px;
+	display:block;
+	background-color:#fff;	
+	-moz-box-shadow: 0px 0px 3px #333; 
+	-khtml-box-shadow: 0px 0px 3px #333; 
+	-webkit-box-shadow: 0px 0px 3px #333; 
+	box-shadow: 0px 0px 3px #333;
+	-moz-border-radius-bottomLeft: 5px;
+	-webkit-border-radius-bottomLeft: 5px;
+	-khtml-border-radius-bottomLeft: 5px;
+	border-radius-bottomLeft: 5px;
+	-moz-border-radius-bottomRight: 5px;
+	-webkit-border-radius-bottomRight: 5px;
+	-khtml-border-radius-bottomRight: 5px;
+	border-radius-bottomRight: 5px;
 }
 #branding hgroup {
 	margin: 0 7.6%;
@@ -322,9 +341,6 @@ body, input, textarea {
 body {
 	background: #e2e2e2;
 }
-#page {
-	background: #fff;
-}
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
@@ -565,7 +581,7 @@ a:hover {
 #access a {
 	color: #eee;
 	display: block;
-	line-height: 3.333em;
+	line-height: 2.333em;
 	padding: 0 1.2125em;
 	text-decoration: none;
 }
@@ -2196,6 +2212,8 @@ p.comment-form-comment {
 
 #colophon {
 	clear: both;
+	max-width:1000px;
+	margin:0px auto;	
 }
 #supplementary {
 	border-top: 1px solid #ddd;
@@ -2225,13 +2243,22 @@ p.comment-form-comment {
 
 /* Site Generator Line */
 #site-generator {
-	background: #f9f9f9;
-	border-top: 1px solid #ddd;
-	color: #666;
-	font-size: 12px;
-	line-height: 2.2em;
-	padding: 2.2em 0.5em;
-	text-align: center;
+	float:left;
+	width:100%;
+	height:30px;
+	padding-top:10px;
+	margin-top:10px;
+	font-size:11px;
+	background-color:#fff;
+	-moz-box-shadow: 0px 0px 3px #333; 
+	-khtml-box-shadow: 0px 0px 3px #333; 
+	-webkit-box-shadow: 0px 0px 3px #333; 
+	box-shadow: 0px 0px 3px #333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom:10px;
 }
 #site-generator a {
 	color: #555;
@@ -2676,4 +2703,10 @@ p.comment-form-comment {
 }
 #ie7 section.recent-posts {
 	margin-right: 7.6%;
+}
+
+#menu-footer li{
+	display:inline-block;
+	list-style:none;	
+	margin:0px 5px;
 }
